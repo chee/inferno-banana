@@ -58,6 +58,7 @@ yarn build
 
 ## todo
 
+* add jsx support in watch (maybe?)
 * take out livereload when building for production
 * don't rely on python2 for serving
 * cry that she is gone
