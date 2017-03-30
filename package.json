@@ -1,0 +1,23 @@
+{
+  "name": "inferno-simple",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "inferno": "^1.5.5",
+    "inferno-component": "^1.5.5",
+    "inferno-hyperscript": "^1.5.5"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "buble": "^0.15.2",
+    "livereloadify": "^2.0.0",
+    "uglify-js": "^2.8.18",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "watch": "watchify src/index.js -o public/bumble.js",
+    "serve": "cd public; python2 -m SimpleHTTPServer 1890",
+    "reload": "livereloadify public",
+    "build": "buble src --jsx h -o build; browserify build/index.js | uglifyjs > public/bumble.js"
+  }
+}
