@@ -1,4 +1,4 @@
-# inferno starter
+# inferno banana
 
 a simple inferno starter with no webpack, no babel and no configuration
 
@@ -54,7 +54,6 @@ yarn serve
 ```sh
 yarn build
 ```
-
 
 ## todo
 
