@@ -25,7 +25,7 @@ yarn
 
 ## in development
 
-i'd open up tmux and have a window for watch, serve and live reload
+i'd open up tmux and have a window for each of `watch`, `serve` and `reload`
 
 ### watch
 (building your js every time you save)
@@ -34,8 +34,9 @@ i'd open up tmux and have a window for watch, serve and live reload
 yarn watch
 ```
 
-### reload
+### livereload
 (reloading your js when it is built)
+(requires livereload browser extension)
 
 ```sh
 yarn reload
@@ -59,5 +60,5 @@ yarn build
 
 * take out livereload when building for production
 * don't rely on python2 for serving
-* cry about her being gone
+* cry that she is gone
 * die in a hole
