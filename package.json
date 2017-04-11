@@ -1,5 +1,5 @@
 {
-  "name": "inferno-simple",
+  "name": "inferno-banana",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,13 +10,14 @@
   "devDependencies": {
     "browserify": "^14.1.0",
     "buble": "^0.15.2",
+    "http-server": "^0.9.0",
     "livereloadify": "^2.0.0",
     "uglify-js": "^2.8.18",
     "watchify": "^3.9.0"
   },
   "scripts": {
     "watch": "watchify src/index.js -o public/bumble.js",
-    "serve": "cd public; python2 -m SimpleHTTPServer ${PORT:-1890}",
+    "serve": "http-server public -p ${PORT:-1690}",
     "reload": "livereloadify public",
     "build": "buble src --jsx h -o build; browserify build/index.js | uglifyjs > public/bumble.js"
   }
