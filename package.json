@@ -16,7 +16,7 @@
   },
   "scripts": {
     "watch": "watchify src/index.js -o public/bumble.js",
-    "serve": "cd public; python2 -m SimpleHTTPServer ${PORT:-1890}",
+    "serve": "cd public; python -m http.server ${PORT:-1890}",
     "reload": "livereloadify public",
     "build": "buble src --jsx h -o build; browserify build/index.js | uglifyjs > public/bumble.js"
   }
