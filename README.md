@@ -49,6 +49,12 @@ yarn reload
 yarn serve
 ```
 
+### all three in parallel
+
+```sh
+yarn go
+```
+
 ## building
 
 ```sh

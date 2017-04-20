@@ -12,6 +12,7 @@
     "buble": "^0.15.2",
     "http-server": "^0.9.0",
     "livereloadify": "^2.0.0",
+    "npm-run-all": "^4.0.2",
     "uglify-js": "^2.8.18",
     "watchify": "^3.9.0"
   },
@@ -19,6 +20,7 @@
     "watch": "watchify src/index.js -o public/bumble.js",
     "serve": "http-server public -p ${PORT:-1690}",
     "reload": "livereloadify public",
+    "go": "run-p watch serve reload",
     "build": "buble src --jsx h -o build; browserify build/index.js | uglifyjs > public/bumble.js"
   }
 }
