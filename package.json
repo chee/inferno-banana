@@ -13,6 +13,7 @@
     "http-server": "^0.9.0",
     "livereloadify": "^2.0.0",
     "npm-run-all": "^4.0.2",
+    "standard": "^10.0.2",
     "uglify-js": "^2.8.18",
     "watchify": "^3.9.0"
   },
